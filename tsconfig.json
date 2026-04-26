@@ -12,9 +12,9 @@
     "types": ["node"],               
 
     /* Other Outputs */
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+    "sourceMap": false,
+    "declaration": false,
+    "declarationMap": false,
 
     /* Stricter Typechecking Options */
     "noUncheckedIndexedAccess": true,
@@ -30,7 +30,7 @@
     /* Recommended Options */
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "moduleDetection": "force",
     "skipLibCheck": true

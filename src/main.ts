@@ -1,8 +1,9 @@
 //src/main.ts
+import { MainBot } from "./index.js"
+
 
 async function main(): Promise<void> {
-    //Punto de entrada no meter logica;
-    // await MainBot();
+    await MainBot();
 }
 
 main().catch((err) => {
