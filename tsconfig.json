@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",         
+    "outDir": "./dist",             
+
+    /* Environment Settings */
+    "module": "nodenext",
+    "moduleResolution": "nodenext",  
+    "target": "esnext",
+    "lib": ["esnext"],        
+    "types": ["node"],               
+
+    /* Other Outputs */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Stricter Typechecking Options */
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Style Options (Recomendado activarlos para código limpio) */
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Recommended Options */
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  , "noUncheckedSideEffectImports": true 
+  },
+  "include": ["src/**/*"],           // Solo compila lo que esté en src
+  "exclude": ["node_modules", "dist", "test"] // Ignora estas carpetas en la compilación final
+}
