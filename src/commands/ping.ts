@@ -8,7 +8,7 @@ export const command: Command = {
 
     // 2. Metadatos
     category: Category.Utility, 
-    ephemeral: true,           
+    ephemeral: false,           
 
     execute: async (interaction: ChatInputCommandInteraction) => {
         const wsPing = interaction.client.ws.ping;
@@ -19,5 +19,5 @@ export const command: Command = {
         await interaction.editReply({
             content: `🏓 **¡Pong!**\n> 🌐 **Latencia API:** \`${wsPing}ms\`\n> ⚡ **Latencia Bot:** \`${roundtripPing}ms\``
         });
-    }
+    },
 };

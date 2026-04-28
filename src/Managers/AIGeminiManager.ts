@@ -9,7 +9,7 @@ export class GeminiManager {
 		//configurar el bot
 		const apiKey = process.env.GEMINI_API_KEY || '';
 		this.genAI = new GoogleGenerativeAI(apiKey);
-		this.model = this.genAI.getGenerativeModel({model: "gemini-3-flash"});
+		this.model = this.genAI.getGenerativeModel({model: "gemini-3-flash-preview"});
 	}
 
 	//Obtener respuesta
